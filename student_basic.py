@@ -6,8 +6,8 @@ def greet(name):                #def is a built-in function in python that is us
 
 greet("Bob")
 
-user_name = input("Enter your name: ")     #
-print("Hello", user_name)
+#user_name = input("Enter your name: ")     #
+#print("Hello", user_name)
 
 age = 18    #if and else are built-in functions in python that are used to check if a condition is true or false.
 if age >= 18:
@@ -86,3 +86,95 @@ print(fruits)
 
 fruits.remove("banana")  # remove
 print(fruits)
+
+student = {"name": "Alex", "age": 21, "grade": "A"}
+print(student.items())
+
+
+student = {"name": "Alex", "age": 21, "grade": "A"}
+
+print(student.get("age"))          # key exists → 21
+print(student.get("city"))         # key not exists → None
+print(student.get("city", "NA"))   # key not exists → return default "NA"
+
+
+# ✅ List Example
+fruits = ["apple", "banana", 10, 3.14]   # Order matters
+print(fruits[0])  # apple
+print(fruits[1])  # banana
+
+# ✅ Dictionary Example
+student = {"name": "Satheesh", "age": 25, "grade": "A"}  # Key:Value pairs
+print(student["name"])  # Satheesh
+print(student["grade"]) # A
+
+
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])   # Output: apple
+print(fruits[2])   # Output: cherry
+
+
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)  
+# Output: ['apple', 'banana', 'cherry']
+
+
+fruits = ["apple", "banana"]
+fruits.insert(1, "orange")  
+print(fruits)  
+# Output: ['apple', 'orange', 'banana']
+
+
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print(fruits)  
+# Output: ['apple', 'cherry']
+
+
+fruits = ["apple", "banana", "cherry"]
+fruits.pop(1)   # removes 'banana'
+print(fruits)   
+# Output: ['apple', 'cherry']
+
+
+fruits = ["apple", "banana", "cherry"]
+print(fruits.index("banana"))  
+# Output: 1
+
+
+nums = [1, 2, 2, 3, 2, 4]
+print(nums.count(2))  
+# Output: 3
+
+
+nums = [4, 1, 3, 2]
+nums.sort()
+print(nums)  
+# Output: [1, 2, 3, 4]
+
+
+nums = [1, 2, 3, 4]
+nums.reverse()
+print(nums)  
+# Output: [4, 3, 2, 1]
+
+
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))  
+# Output: 3
+
+
+fruits = ["apple", "banana"]
+more = ["cherry", "mango"]
+fruits.extend(more)
+print(fruits)  
+# Output: ['apple', 'banana', 'cherry', 'mango']
+
+
+fruits = ["apple", "banana", "cherry", "mango", "grape"]
+print(fruits[1:4])   # Output: ['banana', 'cherry', 'mango']
+print(fruits[:3])    # Output: ['apple', 'banana', 'cherry']
+print(fruits[-2:])   # Output: ['mango', 'grape']
+
+
