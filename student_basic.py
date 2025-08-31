@@ -57,3 +57,32 @@ p3 = Person("Ananth", 30)
 p1.introduce()
 p2.introduce()
 p3.introduce()
+
+num1 = float(input("Enter first number: ")) #calculator
+num2 = float(input("Enter second number: "))
+operation = input("Choose (+, -, *, /): ")
+
+if operation == "+":
+    print("Result:", num1 + num2)
+elif operation == "-":
+    print("Result:", num1 - num2)
+elif operation == "*":
+    print("Result:", num1 * num2)
+elif operation == "/":
+    print("Result:", num1 / num2)
+else:
+    print("Invalid operation")
+
+
+word = input("Enter a word: ") #reverse a word
+print("Reversed:", word[::-1])
+
+
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])   # apple
+print(fruits[1])   # banana
+fruits.append("mango")   # add
+print(fruits)
+
+fruits.remove("banana")  # remove
+print(fruits)
