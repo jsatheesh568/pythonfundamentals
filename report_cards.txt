@@ -1,0 +1,1 @@
+{'id': 101, 'name': 'satheesh', 'age': 21, 'seat': (2, 1), 'marks': {'Math': 99, 'Science': 100, 'English': 85}, 'average': 94.66666666666667, 'grade': 'A+'}
